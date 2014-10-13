@@ -1,0 +1,171 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+
+body{
+  background: url('/images/tweed.png');
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  border-bottom: 1px solid #bbb;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+/////// Main Heading \\\\\\\\\\\\
+
+.main-heading {
+  @include span-columns(4);
+  @include shift(4);
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 80px;
+  color: #fff;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+////////// Log In \\\\\\\\\\\\\\\
+
+.log-in {
+  @include span-columns(4);
+  @include shift(4);
+  background: url('/images/bg.png');
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 20px;
+  
+
+  h2 {
+    text-align: center;
+    color: #555;
+  }
+
+  input {
+    @include span-columns(8);
+    @include shift(2);
+    height: 30px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  button {
+    @include span-columns(8);
+    @include shift(2);
+    background: #4682B4;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    padding: 10px 40px;
+    color: #fff;
+  }
+  
+}
+
+////////////// Chat \\\\\\\\\\\\\\\\\\
+
+.chat {
+  @include span-columns(8);
+  @include shift(2);
+  height: 450px;
+
+  // Rooms \\
+
+  .rooms {
+    @include span-columns(3);
+    @include omega();
+    background: url('/images/bg.png');
+    height: 448px;
+    border-right: 1px solid #d3d3d3;
+
+    .rooms-heading {
+      padding-bottom: 20px;
+      text-align: center;
+      border-bottom: 1px solid #aaa;
+    }
+
+  }
+
+  // Chat-log \\
+
+  .chat-container {
+    @include span-columns(9);
+    background: #E1E5EC;
+    height: 448px;
+
+    .chat-log {
+      overflow: scroll; 
+      height: 418px;
+
+      .name {
+        display: inline;
+        margin-bottom: 40px;
+      }
+
+      .date {
+        font-size: 12px;
+        color: #999;
+        float: right;
+        margin-right: 50px;
+      }
+
+      p {
+        margin-top: 40px;
+      }
+
+    }
+
+    input {
+        @include span-columns(12);
+        height: 30px;
+        padding: 10px;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
